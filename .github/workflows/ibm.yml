@@ -19,7 +19,7 @@ jobs:
       run: |
         chmod -R 777 ./IBM_Cloud_CLI/
     - name: Target IBM Cloud
-        env:
+      env:
         IBM_ACCOUNT: ${{ secrets.IBM_ACCOUNT }}
         REGION_NUM: ${{ secrets.REGION_NUM }}
       run: |
